@@ -1,12 +1,56 @@
-import "./Header.jsx"
-import React from 'react';
+import "./Header.css"
+import React, { useState } from 'react';
 import Nav from '../Nav/Nav';
+import logo from "../../assets/Images/Icone.png"
+import { Link } from "react-router-dom";
+import CheckBox from "../CheckBox/CheckBox";
+import Button from "../Button/Button";
 
 const Header = () => {
+
+    const [isDark, setIsDark] = useState(true);
+
+    const [isLogged, setIsLogged] = useState(true);
+
+
+    function changeTheme() {
+        isDark ? setIsDark(false) : setIsDark(true);
+        console.log(isDark);
+    }
+
     return (
-        <div>
-            <Nav/>
-        </div>
+        <>
+            <header>
+                <Link to={"/"}>
+                    <img src={logo} alt="Logo do site, clique para voltar para a página inicial" />
+                </Link>
+
+                {isLogged ?
+
+                    <>
+                        <Nav isLogged={isLogged} />
+
+                        <CheckBox
+                            isDark={isDark}
+                            setIsDark={changeTheme}
+                        />
+
+                        <Button buttonText={"Sair"} />
+
+                    </> : <>
+                        <Nav isLogged={isLogged} />
+
+                        <CheckBox
+                            isDark={isDark}
+                            setIsDark={changeTheme}
+                        />
+
+                        <Button buttonText={"Login"} />
+
+                    </>}
+
+            </header>
+        </>
     );
 };
 

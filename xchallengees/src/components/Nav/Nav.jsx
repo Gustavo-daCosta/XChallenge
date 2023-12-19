@@ -3,14 +3,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-const Nav = () => {
+const Nav = ({isLogged}) => {
     return (
-        <div>
-            <Link to={"/"}>HomePage</Link>
-            <Link to={"/LoginPage"}>Login Page</Link>
-            <Link to={"/Modalidades"}>Modalidades</Link>
-            <Link to={"/Resultados"}>Resultados</Link>
-        </div>
+        
+        <nav>
+            {isLogged?
+            <>
+            <Link className="navItem" to={"/"}>Home</Link>
+            <Link className="navItem" to={"/Modalidades"}>Modalidades</Link>
+            <Link className="navItem" to={"/Resultados"}>Resultados</Link>
+            </>:<>
+            <Link className="navItem" to={"/"}>Skills</Link>
+            </>}
+        </nav>
     );
 };
 

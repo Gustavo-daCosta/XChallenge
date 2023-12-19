@@ -9,19 +9,15 @@ import Modalidades from './Modalidade/ModalidadePage';
 
 const Rotas = () => {
     return (
-        <div>
             <BrowserRouter>
-            <Header/>
                 <Routes>
-                    <Route path='/' exact element={<HomePage/>} />
-                    <Route path='/LoginPage' element={<LoginPage/>}/>
-                    <Route path='/Modalidades' element={<Modalidades/>}/>
-                    <Route path='/Resultados' element={<ResultadoPage/>}/>
-                    <Route path='*' element={<NotFoundPage/>}/>
+                    <Route path='/' exact element={<HomePage />} />
+                    <Route path='/LoginPage' element={<LoginPage />} />
+                    <Route path='/Modalidades' element={<Modalidades />} />
+                    <Route path='/Resultados' element={<ResultadoPage />} />
+                    <Route path='*' element={<NotFoundPage />} />
                 </Routes>
-            
             </BrowserRouter>
-        </div>
     );
 };
 

@@ -1,8 +1,9 @@
+import "./MainContent.css"
 import React from 'react';
 
 const MainContent = ({children}) => {
     return (
-        <div>
+        <div className='centraliza'>
             {children}
         </div>
     );

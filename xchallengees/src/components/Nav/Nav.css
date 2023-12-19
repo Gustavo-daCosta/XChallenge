@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Sanchez;
+    src: url(../../assets/fonts/Sanchez-Regular.ttf);
+}
+nav{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    width: 600px;
+}
+
+.navItem{
+    color: black;
+    font-size: 36px;
+    font-family: Sanchez;
+
+    text-decoration: none;
+}

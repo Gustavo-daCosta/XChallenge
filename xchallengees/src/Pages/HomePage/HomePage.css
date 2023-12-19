@@ -1,0 +1,19 @@
+.centraliza{
+    display: flex;
+
+    justify-content: center;
+
+    width: 1200px;
+}
+
+hr{
+    width: 100vw;
+
+    border: 1px solid black;
+}
+
+.sliderContainer{
+    height: 920px;
+    width: 100vw;
+    margin: 0;
+}
