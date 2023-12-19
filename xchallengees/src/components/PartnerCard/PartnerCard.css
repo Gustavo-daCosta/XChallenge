@@ -1,7 +1,21 @@
+@font-face {
+    font-family: Sanchez;
+    src: url(../../assets/fonts/Sanchez-Regular.ttf);
+}
+
+
 .partnerCard{
     border-radius: 50px;
     border: 1px solid #B96028;
 
     width: 330px;
     height: 245px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-family: Sanchez;
 }

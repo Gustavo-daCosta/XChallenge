@@ -7,5 +7,7 @@
     margin-bottom: 20px;
 
     display: flex;
-    justify-content: s;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }

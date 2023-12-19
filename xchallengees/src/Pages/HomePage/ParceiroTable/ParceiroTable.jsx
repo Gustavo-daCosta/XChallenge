@@ -6,6 +6,13 @@ const ParceiroTable = () => {
     return (
         <div className='parceiroTable'>
             <PartnerCard />
+            <PartnerCard />
+            <PartnerCard />
+            <PartnerCard />
+            <PartnerCard />
+            <PartnerCard />
+            <PartnerCard />
+            <PartnerCard />
             
         </div>
     );
