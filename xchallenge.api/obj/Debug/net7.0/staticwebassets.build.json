@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "aBscWRdRwSqPNeoHhV4PYZq0l5f7PVmvBo0OMoXOL6M=",
+  "Source": "xchallenge.api",
+  "BasePath": "_content/xchallenge.api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
