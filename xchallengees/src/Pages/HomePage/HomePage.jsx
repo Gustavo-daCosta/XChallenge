@@ -1,5 +1,15 @@
 import "./HomePage.css"
 import React from 'react';
+import back1 from "../../assets/Images/carrosel/background1.jpg"
+import back2 from "../../assets/Images/carrosel/background2.jpg"
+import back3 from "../../assets/Images/carrosel/background3.jpg"
+
+import image1 from "../../assets/Images/carrosel/img1.png"
+import image2 from "../../assets/Images/carrosel/img2.png"
+import image3 from "../../assets/Images/carrosel/img3.png"
+
+
+
 import Button from '../../components/Button/Button.jsx';
 import MainContent from "../../components/MainContent/MainContent.jsx"
 import Input from '../../components/Input/Input.jsx';
@@ -9,14 +19,7 @@ import Container from '../../components/Container/Container.jsx';
 import Footer from "../../components/Footer/Footer";
 import ImageSlider from "../../components/ImageSlider/ImageSlider";
 import Line from "../../components/Line/Line";
-
-import back1 from "../../assets/Images/carrosel/background1.jpg"
-import back2 from "../../assets/Images/carrosel/background2.jpg"
-import back3 from "../../assets/Images/carrosel/background3.jpg"
-
-import image1 from "../../assets/Images/carrosel/img1.png"
-import image2 from "../../assets/Images/carrosel/img2.png"
-import image3 from "../../assets/Images/carrosel/img3.png"
+import NoticiaCard from "../../components/NoticiaCard/NoticiaCard";
 
 const HomePage = () => {
 
@@ -28,9 +31,9 @@ const HomePage = () => {
     ];
 
     const images = [
-    { url: image1 , title: 'WTowers1'},
-    { url: image2 , title: 'WTowers2'},
-    { url: image3 , title: 'WTowers3'}
+        { url: image1, title: 'WTowers1' },
+        { url: image2, title: 'WTowers2' },
+        { url: image3, title: 'WTowers3' }
     ]
 
     const containerStyle = {
@@ -46,14 +49,33 @@ const HomePage = () => {
 
             <Header />
 
-            <Line />
 
             <div style={containerStyle}>
                 <ImageSlider images={images} slides={slides} />
             </div>
 
-            <div>
-                
+            <div className="noticiaSection">
+
+                <Title titleText={"Notícias"} />
+
+                <div className="noticiaCards">
+                    <NoticiaCard />
+                    <NoticiaCard />
+                    <NoticiaCard />
+                    <NoticiaCard />
+                    <NoticiaCard />
+                    <NoticiaCard />
+                </div>
+            </div>
+
+            <div className="partners">
+
+                <Title titleText={"Nossos Parceiros"} />
+
+                <div className="parnterBox">
+                    
+                </div>
+
             </div>
 
 

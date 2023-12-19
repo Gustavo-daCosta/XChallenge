@@ -5,6 +5,7 @@ import logo from "../../assets/Images/Icone.png"
 import { Link } from "react-router-dom";
 import CheckBox from "../CheckBox/CheckBox";
 import Button from "../Button/Button";
+import Line from "../Line/Line";
 
 const Header = () => {
 
@@ -22,7 +23,7 @@ const Header = () => {
         <>
             <header>
                 <Link to={"/"}>
-                    <img src={logo} alt="Logo do site, clique para voltar para a página inicial" />
+                    <img className="logo" src={logo} alt="Logo do site, clique para voltar para a página inicial" />
                 </Link>
 
                 {isLogged ?
@@ -50,6 +51,7 @@ const Header = () => {
                     </>}
 
             </header>
+            <Line/>
         </>
     );
 };

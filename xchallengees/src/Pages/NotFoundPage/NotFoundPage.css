@@ -5,5 +5,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+}
+
+.imageFound{
+    width: 540px;
+    height: 410px;
 }

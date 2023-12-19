@@ -1,0 +1,19 @@
+.card{
+    margin-top: 10px;
+    border: 1px solid #E1AC48;
+
+    width: 270px;
+    height: 230px;
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section h2:hover{
+
+    cursor: auto;
+    text-decoration: none;
+}
