@@ -7,7 +7,6 @@ const Nav = ({isLogged}) => {
     return (
         
         <nav>
-            <Link to={"/Bulhufas"}>Not found</Link>
             {isLogged?
             <>
             <Link className="navItem" to={"/"}>Home</Link>

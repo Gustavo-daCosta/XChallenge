@@ -17,24 +17,3 @@ hr{
     width: 100vw;
     margin: 0;
 }
-
-.noticiaSection{
-    width: 1525px;
-    height: 900px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.noticiaCards{
-    width: 1400px;
-
-    padding: 20px 0px;
-
-    display: flex;
-    justify-content:space-between;
-
-    flex-wrap: wrap;
-}

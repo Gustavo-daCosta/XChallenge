@@ -1,5 +1,5 @@
 import "./HomePage.css"
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import back1 from "../../assets/Images/carrosel/background1.jpg"
 import back2 from "../../assets/Images/carrosel/background2.jpg"
 import back3 from "../../assets/Images/carrosel/background3.jpg"
@@ -20,26 +20,43 @@ import Footer from "../../components/Footer/Footer";
 import ImageSlider from "../../components/ImageSlider/ImageSlider";
 import Line from "../../components/Line/Line";
 import NoticiaCard from "../../components/NoticiaCard/NoticiaCard";
+import api, { NoticiaResource } from "../../Services/Service.js";
+import NoticiaTable from "./NoticiaTable/NoticiaTable.jsx";
+import ParceiroTable from "./ParceiroTable/ParceiroTable.jsx";
 
 const HomePage = () => {
-
-
     const slides = [
         { url: back1, title: 'city' },
         { url: back2, title: 'world' },
         { url: back3, title: 'people' }
-    ];
-
+    ]
     const images = [
         { url: image1, title: 'WTowers1' },
         { url: image2, title: 'WTowers2' },
         { url: image3, title: 'WTowers3' }
     ]
-
     const containerStyle = {
         width: "1525px",
         height: "700px",
         margin: "0 auto"
+    }
+
+    const [noticias, setNoticias] = useState([]);
+    
+
+    useEffect(() => {
+        loadNoticias();
+    },[]);
+
+
+    async function loadNoticias(){
+        try {
+            const request = await api.get(NoticiaResource)
+            setNoticias(request.data)
+
+        } catch (error) {
+            console.log(error);
+        }
     }
 
 
@@ -54,29 +71,12 @@ const HomePage = () => {
                 <ImageSlider images={images} slides={slides} />
             </div>
 
-            <div className="noticiaSection">
+            <NoticiaTable noticias={noticias}/>
 
-                <Title titleText={"Notícias"} />
-
-                <div className="noticiaCards">
-                    <NoticiaCard />
-                    <NoticiaCard />
-                    <NoticiaCard />
-                    <NoticiaCard />
-                    <NoticiaCard />
-                    <NoticiaCard />
-                </div>
-            </div>
-
-            <div className="partners">
 
                 <Title titleText={"Nossos Parceiros"} />
 
-                <div className="parnterBox">
-                    
-                </div>
-
-            </div>
+                <ParceiroTable/>
 
 
 

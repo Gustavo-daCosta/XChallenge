@@ -3,7 +3,9 @@ import React from 'react';
 
 const PartnerCard = () => {
     return (
-        <section></section>
+        <section className="partnerCard">
+
+        </section>
     );
 };
 

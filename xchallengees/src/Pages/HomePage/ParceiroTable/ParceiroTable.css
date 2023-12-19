@@ -1,0 +1,11 @@
+.parceiroTable{
+    border-radius: 50px;
+    border: 2px solid #E1AC48;
+    width: 1400px;
+    height: 625px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: s;
+}
