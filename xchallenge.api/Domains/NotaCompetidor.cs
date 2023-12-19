@@ -15,5 +15,5 @@ public partial class NotaCompetidor
 
     public virtual Competidor? IdCompetidorNavigation { get; set; }
 
-    public virtual Notum? IdNotaNavigation { get; set; }
+    public virtual Nota? IdNotaNavigation { get; set; }
 }

@@ -32,9 +32,9 @@ public partial class XChallengeContext : DbContext
 
     public virtual DbSet<NotaCompetidor1> NotaCompetidors1 { get; set; }
 
-    public virtual DbSet<Noticium> Noticia { get; set; }
+    public virtual DbSet<Noticia> Noticia { get; set; }
 
-    public virtual DbSet<Notum> Nota { get; set; }
+    public virtual DbSet<Nota> Nota { get; set; }
 
     public virtual DbSet<Parceiro> Parceiros { get; set; }
 
@@ -204,13 +204,13 @@ public partial class XChallengeContext : DbContext
             entity.Property(e => e.IdNota).HasColumnName("idNota");
         });
 
-        modelBuilder.Entity<Noticium>(entity =>
+        modelBuilder.Entity<Noticia>(entity =>
         {
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Data)
                 .HasColumnType("date")
                 .HasColumnName("data");
-            entity.Property(e => e.Noticia)
+            entity.Property(e => e.noticia)
                 .HasColumnType("text")
                 .HasColumnName("noticia");
             entity.Property(e => e.Status)
@@ -224,7 +224,7 @@ public partial class XChallengeContext : DbContext
                 .HasColumnName("titulo");
         });
 
-        modelBuilder.Entity<Notum>(entity =>
+        modelBuilder.Entity<Nota>(entity =>
         {
             entity.HasKey(e => e.IdNota);
 

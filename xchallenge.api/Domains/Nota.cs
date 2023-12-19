@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace xchallenge.api.Domains;
 
-public partial class Notum
+public partial class Nota
 {
     public int IdNota { get; set; }
 
