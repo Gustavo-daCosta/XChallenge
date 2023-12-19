@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sVUox55qxxzEL0Zrznsg+WGO7C8tGkzWL5XfzaIOt0Kt5fq0ZwtJMk0s6Xc3Y1bfnpdMHhvqCNmQ22p8mgMF2w==",
+  "dgSpecHash": "WVH2tk7GptXe7Qtkuaqz/cLRWZyhpr2SZawFQcKlgfDv/6ma3Uw8cndvc9fREViaJPXHwO65YZeTXaQ7rYhQ9w==",
   "success": true,
   "projectFilePath": "C:\\Users\\proeducador\\Desktop\\XChallenge\\xchallenge.api\\xchallenge.api.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\proeducador\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\proeducador\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\proeducador\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\proeducador\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.14\\microsoft.aspnetcore.authentication.jwtbearer.7.0.14.nupkg.sha512",
     "C:\\Users\\proeducador\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\7.0.14\\microsoft.aspnetcore.jsonpatch.7.0.14.nupkg.sha512",
     "C:\\Users\\proeducador\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\7.0.14\\microsoft.aspnetcore.mvc.newtonsoftjson.7.0.14.nupkg.sha512",
     "C:\\Users\\proeducador\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.13\\microsoft.aspnetcore.openapi.7.0.13.nupkg.sha512",

@@ -25,6 +25,9 @@ namespace xchallenge.api.Repositories
                     parceiroBuscado.Nome = parceiro.Nome;
                     parceiroBuscado.Descricao = parceiro.Descricao;
                 }
+
+                _context.Parceiros.Update(parceiroBuscado!);
+                _context.SaveChanges();
             }
             catch (Exception)
             {

@@ -25,6 +25,9 @@ namespace xchallenge.api.Repositories
                     acessoBuscado.Email = acesso.Email;
                     acessoBuscado.SenhaAcesso = acesso.SenhaAcesso;
                 }
+
+                _context.Acessos.Update(acessoBuscado!);
+                _context.SaveChanges();
             }
             catch (Exception)
             {

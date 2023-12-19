@@ -79,3 +79,4 @@ C:\Users\proeducador\Desktop\XChallenge\xchallenge.api\obj\Debug\net7.0\refint\x
 C:\Users\proeducador\Desktop\XChallenge\xchallenge.api\obj\Debug\net7.0\xchallenge.api.pdb
 C:\Users\proeducador\Desktop\XChallenge\xchallenge.api\obj\Debug\net7.0\xchallenge.api.genruntimeconfig.cache
 C:\Users\proeducador\Desktop\XChallenge\xchallenge.api\obj\Debug\net7.0\ref\xchallenge.api.dll
+C:\Users\proeducador\Desktop\XChallenge\xchallenge.api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

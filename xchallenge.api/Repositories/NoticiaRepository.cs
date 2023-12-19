@@ -26,6 +26,9 @@ namespace xchallenge.api.Repositories
                     noticiaBuscada.noticia = noticia.noticia;
                     noticiaBuscada.Status = noticia.Status;
                 }
+
+                _context.Noticia.Update(noticiaBuscada!);
+                _context.SaveChanges();
             }
             catch (Exception)
             {
@@ -81,7 +84,7 @@ namespace xchallenge.api.Repositories
         {
             try
             {
-                return _context.Noticia.ToList();
+                return _context.Noticia.OrderByDescending (z => z.Data).ToList();
             }
             catch (Exception)
             {
