@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Sanchez;
+    src: url(../../assets/fonts/Sanchez-Regular.ttf);
+}
+
+:root{
+    --yellow: #E1AC48;
+    --green: #A7C2C2;
+    --orange: #B96028;
+
+}
+
+button{
+    width: 340px;
+    height: 45px;
+
+    border-radius: 40px;
+    border: none;
+
+    color: black;
+    font-family: Sanchez;
+    font-size: 25px;
+
+    background-color: var(--yellow);
+}
+
+.yellow{
+    color: var(--yellow);
+
+}
+
+.green{
+    color: var(--green);
+
+}
+.orange{
+    color: var(--orange);
+
+}

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Sanchez;
+    src: url(../../assets/fonts/Sanchez-Regular.ttf);
+}
+
+h1{
+    color: black;
+    font-size: 40px;
+    font-family: Sanchez;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
