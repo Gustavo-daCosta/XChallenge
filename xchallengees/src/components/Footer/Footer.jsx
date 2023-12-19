@@ -13,29 +13,34 @@ const Footer = () => {
         <div className="background">
 
             <footer>
-                <div className="footer-part">
-                    <h2>WSTowers</h2>
-                    <p>Skills</p>
-                    <p>Parceiros</p>
-                    <p>Visitantes</p>
-                </div>
 
-                <div className="footer-part">
-                    <h2>Redes Sociais</h2>
-                    <div className="social">
-                        <img src={face} alt="icone do facebook" />
-                        <p>Facebook</p>
+                    <div className="footer-part">
+                        <h2>WSTowers</h2>
+                        <p>Skills</p>
+                        <p>Parceiros</p>
+                        <p>Visitantes</p>
                     </div>
-                    <div className="social">
-                        <img src={tube} alt="icone do youtube" />
-                        <p>Youtube</p>
+
+                    <div className="footer-part">
+                        <h2>Redes Sociais</h2>
+                        <div className="social">
+                            <img src={face} alt="icone do facebook" />
+                            <p>Facebook</p>
+                        </div>
+                        <div className="social">
+                            <img src={tube} alt="icone do youtube" />
+                            <p>Youtube</p>
+                        </div>
+                        <div className="social">
+                            <img src={tter} alt="icone do twitter" />
+                            <p>Twitter</p>
+                        </div>
                     </div>
-                    <div className="social">
-                        <img src={tter} alt="icone do twitter" />
-                        <p>Twitter</p>
-                    </div>
-                </div>
+                    
             </footer>
+
+            <hr />
+            <p>Xchallenge - 2023</p>
         </div>
     );
 };

@@ -1,11 +1,17 @@
+import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
+import MainContent from "../../components/MainContent/MainContent";
 import "./NotFoundPage.css"
 import React from 'react';
 
 const NotFoundPage = () => {
     return (
-        <div>
-            <h1>Tela não encontrada </h1>
-        </div>
+        <MainContent>
+            <Header/>
+            <div className="notFound">
+
+            </div>
+        </MainContent>
     );
 };
 
