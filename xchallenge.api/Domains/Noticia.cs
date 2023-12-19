@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace xchallenge.api.Domains;
 
-public partial class Noticium
+public partial class Noticia
 {
     public int Id { get; set; }
 
@@ -11,7 +11,7 @@ public partial class Noticium
 
     public string? Titulo { get; set; }
 
-    public string? Noticia { get; set; }
+    public string? noticia { get; set; }
 
     public string? Status { get; set; }
 }
