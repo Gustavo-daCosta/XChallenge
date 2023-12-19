@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Sanchez;
+    src: url(../../assets/fonts/Sanchez-Regular.ttf);
+}
+
+input{
+    width: 340px;
+    height: 45px;
+
+    border: 1px solid #B96028;
+    border-radius: 40px;
+
+    text-align: left;
+    padding-left: 30px;
+
+    font-size: 18px;
+    font-family: Sanchez;
+}
